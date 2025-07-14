@@ -1,5 +1,4 @@
-# Open in Finder
-
+# Open in Finder - Google Drive
 A simple macOS app that opens Finder and navigates to the folder containing any file you select. Perfect for use with Google Drive files where you want to see the file in its folder context.
 
 ## Installation
@@ -8,6 +7,7 @@ A simple macOS app that opens Finder and navigates to the folder containing any 
 ```bash
 ./install.sh
 ```
+Both builds and installs App in your `/Applications` folder
 
 ### Manual installation:
 1. Run the build script:
@@ -47,7 +47,7 @@ The app is now installed and ready to use!
 
 ## How it works
 
-The app uses AppleScript to:
+The app uses **AppleScript** to:
 1. Receive the file path as a command-line argument
 2. Tell Finder to reveal the file at that path
 3. Activate Finder to bring it to the front
