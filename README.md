@@ -1,5 +1,18 @@
+
 # Open in Finder - Google Drive
 A simple macOS app that opens Finder and navigates to the folder containing any file you select. Perfect for use with Google Drive files where you want to see the file in its folder context.
+
+<table width="100%">
+  <tr>
+    <td width="25%" align="center" valign="middle">
+      <img src="media/OpenInFinder-Logo-FullSize.png" alt="OpenInFinder Logo" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+    </td>
+    <td align="center" valign="middle">
+      <img src="media/demo1.gif" alt="Demo: Open in Finder with Google Drive" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+    </td>
+  </tr>
+</table>
+
 
 ## Installation
 
