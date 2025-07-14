@@ -1,6 +1,6 @@
 
 # Open in Finder - Google Drive
-A simple macOS app that opens Finder and navigates to the folder containing any file you select. Perfect for use with Google Drive files where you want to see the file in its folder context.
+A simple macOS app that opens Finder and navigates to the folder containing any file you select. **Perfect for Google Drive integration** - when you want to quickly locate and view Google Drive files in their native folder context within Finder.
 
 <table width="100%">
   <tr>
@@ -42,18 +42,6 @@ The app is now installed and ready to use!
 
 ## Usage
 
-### Method 1: Right-click context menu
-1. Right-click any file in Finder
-2. Select "Open With" → "OpenInFinder"
-3. Finder will open and navigate to the folder containing that file
-
-### Method 2: Default app for file type
-1. Right-click a file
-2. Select "Get Info"
-3. In the "Open with" section, choose "OpenInFinder"
-4. Click "Change All..." to make it the default for all files of that type
-
-### Method 3: Google Drive integration
 1. In Google Drive (web), right-click a file
 2. Select "Open with" → "OpenInFinder" (if configured)
 3. The file will be downloaded/synced and Finder will open to its location
@@ -67,7 +55,7 @@ The app uses **AppleScript** to:
 
 ## Files
 
-- `open-in-finder.sh` - The main shell script that handles the file revealing
+- `install.sh` - Installs the app in your `/Applications` folder and registers it with the system
 - `Info.plist` - App configuration that makes it accept all file types
 - `build.sh` - Build script to create the app bundle
 - `OpenInFinder.app` - The final application bundle
