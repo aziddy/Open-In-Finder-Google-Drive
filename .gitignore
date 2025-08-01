@@ -13,4 +13,5 @@ OpenInFinder.app/
 OpenInFinder.pkg
 installer/payload/Applications/ 
 install/payload/**
+OpenInFinder*.pkg
 

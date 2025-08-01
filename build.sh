@@ -4,11 +4,11 @@
 mkdir -p "OpenInFinder.app/Contents/MacOS"
 mkdir -p "OpenInFinder.app/Contents/Resources"
 
-# Compile Objective-C version
-if clang -framework Foundation -framework AppKit -o "OpenInFinder.app/Contents/MacOS/OpenInFinder" main.m; then
-    echo "✓ Built Objective-C version"
+# Compile Objective-C version as universal binary
+if clang -arch x86_64 -arch arm64 -framework Foundation -framework AppKit -o "OpenInFinder.app/Contents/MacOS/OpenInFinder" main.m; then
+    echo "✓ Built universal binary (Intel + Apple Silicon)"
 else
-    echo "✗ Objective-C compilation failed"
+    echo "✗ Universal binary compilation failed"
     exit 1
 fi
 
