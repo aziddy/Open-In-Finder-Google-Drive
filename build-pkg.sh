@@ -6,7 +6,7 @@ echo "Building OpenInFinder PKG installer..."
 
 # Clean up previous builds
 rm -rf installer/payload/Applications/OpenInFinder.app
-rm -f OpenInFinder.pkg
+rm -f OpenInFinder-unsigned.pkg
 
 # Build the app first
 echo "Building app..."
@@ -24,15 +24,15 @@ pkgbuild \
     --identifier com.alexzidros.openinfinder \
     --version 1.0 \
     --install-location / \
-    OpenInFinder.pkg
+    OpenInFinder-unsigned.pkg
 
 if [ $? -eq 0 ]; then
-    echo "✓ PKG installer created successfully: OpenInFinder.pkg"
+    echo "✓ PKG installer created successfully: OpenInFinder-unsigned.pkg"
     echo ""
     echo "To install:"
-    echo "  sudo installer -pkg OpenInFinder.pkg -target /"
+    echo "  sudo installer -pkg OpenInFinder-unsigned.pkg -target /"
     echo ""
-    echo "Or double-click OpenInFinder.pkg to install via GUI"
+    echo "Or double-click OpenInFinder-unsigned.pkg to install via GUI"
 else
     echo "✗ Failed to create PKG installer"
     exit 1
