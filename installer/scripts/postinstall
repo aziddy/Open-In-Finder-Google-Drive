@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Post-install script for OpenInFinder PKG installer
+# This script registers the app with Launch Services so it appears in "Open With" menus
+
+echo "Registering OpenInFinder with Launch Services..."
+
+# Register the app with the system
+/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -f "/Applications/OpenInFinder.app"
+
+if [ $? -eq 0 ]; then
+    echo "✓ OpenInFinder registered successfully"
+else
+    echo "⚠ Warning: Failed to register OpenInFinder"
+fi
+
+# Refresh Launch Services database
+/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain system -domain user
+
+echo "Installation complete!"
+echo "You can now right-click any file → Open With → OpenInFinder"
+echo "Note: You may need to restart applications or log out/in for the app to appear in all menus."
+
+exit 0

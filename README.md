@@ -14,15 +14,30 @@ A simple macOS app that opens Finder and navigates to the folder containing any 
 </table>
 
 
-## Installation
+## Usage
+1. In Google Drive (web), right-click a file
+2. Select "Open with" → "OpenInFinder" (if configured)
+3. The file will be downloaded/synced and Finder will open to its location
 
-### Easy installation:
+
+## Requirements to Install & Run
+- macOS 10.15 or later
+
+
+## Build Install From Source
+
+### Requirements to build from source
+- macOS 10.15 or later
+- AppleScript support (built into macOS)
+- Xcode Command Line Tools (for building from source): `xcode-select --install`
+
+#### Option 1) Easy Installation Script:
 ```bash
 ./install.sh
 ```
 Both builds and installs App in your `/Applications` folder
 
-### Manual installation:
+#### Option 2) Manual Installation:
 1. Run the build script:
    ```bash
    ./build.sh
@@ -40,33 +55,23 @@ Both builds and installs App in your `/Applications` folder
 
 The app is now installed and ready to use!
 
-## Usage
 
-1. In Google Drive (web), right-click a file
-2. Select "Open with" → "OpenInFinder" (if configured)
-3. The file will be downloaded/synced and Finder will open to its location
 
 ## How it works
-
 The app uses **AppleScript** to:
 1. Receive the file path as a command-line argument
 2. Tell Finder to reveal the file at that path
 3. Activate Finder to bring it to the front
 
 ## Files
-
 - `install.sh` - Installs the app in your `/Applications` folder and registers it with the system
 - `Info.plist` - App configuration that makes it accept all file types
 - `build.sh` - Build script to create the app bundle
 - `OpenInFinder.app` - The final application bundle
 
-## Requirements
 
-- macOS 10.15 or later
-- AppleScript support (built into macOS)
 
 ## Troubleshooting
-
 If the app doesn't appear in "Open With" menus:
 1. Make sure it's in the `/Applications` folder
 2. Try running: `lsregister -f /Applications/OpenInFinder.app`

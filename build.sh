@@ -4,13 +4,12 @@
 mkdir -p "OpenInFinder.app/Contents/MacOS"
 mkdir -p "OpenInFinder.app/Contents/Resources"
 
-# Try to compile Objective-C version, fall back to shell script
-if clang -framework Foundation -framework AppKit -o "OpenInFinder.app/Contents/MacOS/OpenInFinder" main.m 2>/dev/null; then
+# Compile Objective-C version
+if clang -framework Foundation -framework AppKit -o "OpenInFinder.app/Contents/MacOS/OpenInFinder" main.m; then
     echo "✓ Built Objective-C version"
 else
-    echo "! Objective-C compilation failed, using shell script version"
-    # Copy shell script as the executable
-    cp open-in-finder.sh "OpenInFinder.app/Contents/MacOS/OpenInFinder"
+    echo "✗ Objective-C compilation failed"
+    exit 1
 fi
 
 # Copy Info.plist
