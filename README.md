@@ -22,9 +22,14 @@ A simple macOS app that opens Finder and navigates to the folder containing any 
 
 ## Requirements to Install & Run
 - macOS 10.15 or later
+<br><br>
+
+## Download & Install
+Click "***Releases***" on the right side of this page to download the latest version.
+<br><br>
 
 
-## Build Install From Source
+## Build/Install From Source *(for developers)*
 
 ### Requirements to build from source
 - macOS 10.15 or later
