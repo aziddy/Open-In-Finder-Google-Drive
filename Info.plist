@@ -18,6 +18,8 @@
     <string>AppIcon</string>
     <key>LSUIElement</key>
     <true/>
+    <key>LSMinimumSystemVersion</key>
+    <string>12.7.6</string>
     <key>CFBundleDocumentTypes</key>
     <array>
         <dict>
