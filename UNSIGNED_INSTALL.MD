@@ -18,8 +18,10 @@ If Method 1 doesn't work or you see a "blocked" message:
 2. **Open System Settings** (or System Preferences on older macOS)
 3. Go to **"Privacy & Security"**
 4. Scroll down to the **"Security"** section
+   ![Privacy & Security - Open Anyway](media/unsigned-instructions/2-Settings-PrivacySecruity-OpenAnyway-image.png)
 5. You'll see a message about the blocked installer
 6. Click **"Open Anyway"** next to the blocked app message
+   ![Last Open Anyway](media/unsigned-instructions/3-LastOpenAnyway.png)  
 7. Click **"Open"** in the confirmation dialog
 8. Follow the installer prompts
 
@@ -51,14 +53,14 @@ Once installed, OpenInFinder will work normally. You may need to:
    killall Finder
    ```
 
-## Alternative: Use Signed Version
+<!-- ## Alternative: Use Signed Version
 
-For the best user experience without security warnings, use the signed and notarized version instead. See `BUILD-SIGNED.md` for creating a signed installer.
+For the best user experience without security warnings, use the signed and notarized version instead. See `BUILD-SIGNED.md` for creating a signed installer. -->
 
 ## Troubleshooting
 
 ### "Cannot be opened because it is from an unidentified developer"
-- Use Method 1 (right-click ’ Open) or Method 2 (Privacy & Security settings)
+- Use Method 1 (right-click ï¿½ Open) or Method 2 (Privacy & Security settings)
 
 ### "This package is damaged and can't be opened"  
 - Download the PKG file again

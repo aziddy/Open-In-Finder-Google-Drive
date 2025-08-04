@@ -1,6 +1,6 @@
 
 # Open in Finder - Google Drive
-A simple macOS app that opens Finder and navigates to the folder containing any file you select. **Perfect for Google Drive integration** - when you want to quickly locate and view Google Drive files in their native folder context within Finder.
+A simple macOS app that opens Finder and navigates to the folder containing any file you select. **Perfect for Google Drive integration** - when you want to quickly locate and view Google Drive files in their native folder context within Finder
 
 <table width="100%">
   <tr>
@@ -21,22 +21,24 @@ A simple macOS app that opens Finder and navigates to the folder containing any 
 
 
 ## Requirements to Install & Run
-- macOS 10.15 or later
+- Minimum **macOS 12.7.6 (Monterey)** or later
+- [**Google Drive Desktop**](https://ipv4.google.com/intl/en_zm/drive/download/) App installed on your Mac
+- Official [**Application Launcher for Drive (By Google)**](https://chromewebstore.google.com/detail/application-launcher-for/lmjegmlicamnimmfhcmpkclmigmmcbeh) Extension installed in **Chrome**
 <br><br>
 
 ## Download & Install
-<a href="https://github.com/aziddy/Open-In-Finder-Google-Drive/releases/download/V1.0.1/OpenInFinder-unsigned.pkg">
+<a href="https://github.com/aziddy/Open-In-Finder-Google-Drive/releases/download/V1.0.2/OpenInFinder-unsigned.pkg">
   <img src="media/download-icon.png" alt="Download Latest Version" style="width: 400px; height: auto; display: block; margin: 0 auto;" />
 </a><br>
 
-⚠️ If you see a "blocked" message, see [UNSIGNED_INSTALL.MD](UNSIGNED_INSTALL.MD) for help ⚠️
+⚠️ If you see a "blocked" message, see [UNSIGNED_INSTALL.MD](UNSIGNED_INSTALL.MD) for help ⚠️  
 <br><br>
 
 
 ## Build/Install From Source *(for developers)*
 
 ### Requirements to build from source
-- macOS 10.15 or later
+- macOS 12.7.6 or later
 - AppleScript support (built into macOS)
 - Xcode Command Line Tools (for building from source): `xcode-select --install`
 
