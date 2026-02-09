@@ -8,7 +8,7 @@ A simple macOS app that opens Finder and navigates to the folder containing any 
       <img src="media/OpenInFinder-Logo-FullSize.png" alt="OpenInFinder Logo" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
     </td>
     <td align="center" valign="middle">
-      <video src="media/demo2_edited.mp4" autoplay loop muted style="max-width: 100%; height: auto; display: block; margin: 0 auto;">Demo: Open in Finder with Google Drive</video>
+      <img src="media/demo1.gif" alt="Demo: Open in Finder with Google Drive" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
     </td>
   </tr>
 </table>
