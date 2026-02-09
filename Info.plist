@@ -33,6 +33,9 @@
                 <string>xlsx</string>
                 <string>ppt</string>
                 <string>pptx</string>
+                <string>odt</string>
+                <string>ods</string>
+                <string>odp</string>
                 <string>jpg</string>
                 <string>jpeg</string>
                 <string>png</string>
@@ -40,6 +43,11 @@
                 <string>svg</string>
                 <string>webp</string>
                 <string>heic</string>
+                <string>avif</string>
+                <string>ico</string>
+                <string>bmp</string>
+                <string>tiff</string>
+                <string>tif</string>
                 <string>raw</string>
                 <string>psd</string>
                 <string>ai</string>
@@ -50,7 +58,6 @@
                 <string>indesign-document</string>
                 <string>drawio</string>
                 <string>vil</string>
-                <string>txt</string>
                 <string>csv</string>
                 <string>tsv</string>
                 <string>json</string>
@@ -60,35 +67,70 @@
                 <string>pages</string>
                 <string>numbers</string>
                 <string>keynote</string>
-                <string>pages</string>
-                <string>numbers</string>
-                <string>keynote</string>
                 <string>3mf</string>
+                <string>stl</string>
+                <string>obj</string>
+                <string>blend</string>
+                <string>dae</string>
                 <string>yaml</string>
                 <string>yml</string>
+                <string>toml</string>
+                <string>ini</string>
+                <string>env</string>
                 <string>mp4</string>
                 <string>mov</string>
+                <string>m4v</string>
+                <string>avi</string>
+                <string>mkv</string>
+                <string>webm</string>
                 <string>mp3</string>
                 <string>wav</string>
+                <string>m4a</string>
+                <string>aac</string>
+                <string>flac</string>
+                <string>ogg</string>
+                <string>aiff</string>
                 <string>zip</string>
                 <string>rar</string>
+                <string>7z</string>
+                <string>tar</string>
+                <string>gz</string>
+                <string>dmg</string>
                 <string>html</string>
                 <string>css</string>
                 <string>js</string>
+                <string>ts</string>
+                <string>tsx</string>
+                <string>jsx</string>
+                <string>vue</string>
                 <string>py</string>
                 <string>java</string>
                 <string>cpp</string>
                 <string>c</string>
                 <string>h</string>
                 <string>swift</string>
-                <string>json</string>
-                <string>xml</string>
-                <string>csv</string>
-                <string>md</string>
-                <string>rtf</string>
-                <string>pages</string>
-                <string>numbers</string>
-                <string>keynote</string>
+                <string>go</string>
+                <string>rs</string>
+                <string>rb</string>
+                <string>kt</string>
+                <string>php</string>
+                <string>sql</string>
+                <string>sh</string>
+                <string>zsh</string>
+                <string>epub</string>
+                <string>mobi</string>
+                <string>ttf</string>
+                <string>otf</string>
+                <string>woff</string>
+                <string>woff2</string>
+                <string>tex</string>
+                <string>bib</string>
+                <string>pem</string>
+                <string>crt</string>
+                <string>key</string>
+                <string>cer</string>
+                <string>p12</string>
+                <string>pfx</string>
             </array>
             <key>CFBundleTypeName</key>
             <string>All Supported Files</string>
