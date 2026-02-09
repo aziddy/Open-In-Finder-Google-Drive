@@ -27,7 +27,7 @@ A simple macOS app that opens Finder and navigates to the folder containing any 
 <br><br>
 
 ## Download & Install
-<a href="https://github.com/aziddy/Open-In-Finder-Google-Drive/releases/download/V1.0.2/OpenInFinder-unsigned.pkg">
+<a href="https://github.com/aziddy/Open-In-Finder-Google-Drive/releases/download/V1.0.3/OpenInFinder-unsigned.pkg">
   <img src="media/download-icon.png" alt="Download Latest Version" style="width: 400px; height: auto; display: block; margin: 0 auto;" />
 </a><br>
 
