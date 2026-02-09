@@ -22,7 +22,7 @@ pkgbuild \
     --root installer/payload \
     --scripts installer/scripts \
     --identifier com.alexzidros.openinfinder \
-    --version 1.0 \
+    --version 1.0.3 \
     --install-location / \
     OpenInFinder-unsigned.pkg
 

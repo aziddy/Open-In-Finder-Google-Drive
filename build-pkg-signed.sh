@@ -54,7 +54,7 @@ pkgbuild \
     --root installer/payload \
     --scripts installer/scripts \
     --identifier com.alexzidros.openinfinder \
-    --version 1.0 \
+    --version 1.0.3 \
     --install-location / \
     --sign "$DEVELOPER_ID_INSTALLER" \
     OpenInFinder-signed.pkg
