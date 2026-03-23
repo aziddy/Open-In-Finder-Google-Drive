@@ -4,10 +4,19 @@
 
 ### 1) Create Developer ID Certificates
 1. Log into [Apple Developer Portal - Certificates](https://developer.apple.com/account/resources/certificates/list)
-2. Create two certificates:
-   - **Developer ID Application** (signs the app binary)
-   - **Developer ID Installer** (signs the PKG installer)
-3. Download and double-click each to install in Keychain
+2. Click the **+** button to create a new certificate
+3. Scroll to the bottom of the **Software** section and create these two certificates (one at a time):
+   - **Developer ID Application** — signs the app binary for distribution outside the Mac App Store
+   - **Developer ID Installer** — signs the PKG installer for distribution outside the Mac App Store
+4. On the next screen, select **G2 Sub-CA** and upload a CSR file:
+   - Open **Keychain Access** app on your Mac
+   - Menu bar: **Keychain Access** > **Certificate Assistant** > **Request a Certificate from a Certificate Authority**
+   - Fill in your **email address**, leave **CA Email Address** blank, select **Saved to disk**, click **Continue**
+   - Save the `.certSigningRequest` file to your Desktop
+5. Back in the browser, click **Choose File**, select your `.certSigningRequest` file, then click **Continue**
+6. Click **Download** to save the `.cer` file, then double-click it to install in Keychain
+7. Repeat steps 2–6 for the second certificate type
+    - Will need to request new cert from cert authority again (can't use the same one)
 
 ### 2) Create App-Specific Password
 1. Go to [Apple ID Account](https://appleid.apple.com/account/manage)
