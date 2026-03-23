@@ -19,15 +19,6 @@ if [ -z "$DEVELOPER_ID_APPLICATION" ]; then
     exit 1
 fi
 
-if [ -z "$APPLE_ID" ] || [ -z "$APPLE_ID_PASSWORD" ] || [ -z "$TEAM_ID" ]; then
-    echo "Error: Apple ID credentials not set"
-    echo "Required environment variables:"
-    echo "export APPLE_ID=\"your-apple-id@example.com\""
-    echo "export APPLE_ID_PASSWORD=\"app-specific-password\""
-    echo "export TEAM_ID=\"YOUR_TEAM_ID\""
-    exit 1
-fi
-
 # Clean up previous builds
 rm -rf installer/payload/Applications/OpenInFinder.app
 rm -f OpenInFinder.pkg OpenInFinder-signed.pkg
@@ -38,7 +29,7 @@ echo "Building app..."
 
 # Sign the app
 echo "Signing app..."
-codesign --force --options runtime --deep --sign "$DEVELOPER_ID_APPLICATION" OpenInFinder.app
+codesign --force --options runtime --sign "$DEVELOPER_ID_APPLICATION" OpenInFinder.app
 
 # Verify app signature
 echo "Verifying app signature..."
@@ -69,9 +60,7 @@ echo "✓ Signed PKG installer created: OpenInFinder-signed.pkg"
 # Notarize the PKG
 echo "Submitting for notarization..."
 xcrun notarytool submit OpenInFinder-signed.pkg \
-    --apple-id "$APPLE_ID" \
-    --password "$APPLE_ID_PASSWORD" \
-    --team-id "$TEAM_ID" \
+    --keychain-profile "OpenInFinder" \
     --wait
 
 if [ $? -ne 0 ]; then

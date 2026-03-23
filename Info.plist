@@ -131,6 +131,124 @@
                 <string>cer</string>
                 <string>p12</string>
                 <string>pfx</string>
+                <!-- Fusion 360 / CAD -->
+                <string>f3d</string>
+                <string>f3z</string>
+                <string>step</string>
+                <string>stp</string>
+                <string>iges</string>
+                <string>igs</string>
+                <string>sat</string>
+                <string>sab</string>
+                <string>smt</string>
+                <string>dxf</string>
+                <string>dwg</string>
+                <string>3dm</string>
+                <string>x_t</string>
+                <string>x_b</string>
+                <string>ipt</string>
+                <string>iam</string>
+                <string>sldprt</string>
+                <string>sldasm</string>
+                <string>catpart</string>
+                <string>catproduct</string>
+                <string>prt</string>
+                <string>nc</string>
+                <string>gcode</string>
+                <string>ply</string>
+                <!-- KeyShot / Rendering -->
+                <string>bip</string>
+                <string>ksp</string>
+                <string>hdr</string>
+                <string>exr</string>
+                <string>3ds</string>
+                <!-- Design — UI/UX, Motion, 3D, Photo -->
+                <string>sketch</string>
+                <string>xd</string>
+                <string>afdesign</string>
+                <string>afphoto</string>
+                <string>afpub</string>
+                <string>aep</string>
+                <string>prproj</string>
+                <string>fbx</string>
+                <string>gltf</string>
+                <string>glb</string>
+                <string>usd</string>
+                <string>usda</string>
+                <string>usdc</string>
+                <string>usdz</string>
+                <string>c4d</string>
+                <string>ma</string>
+                <string>mb</string>
+                <string>skp</string>
+                <string>procreate</string>
+                <string>cr2</string>
+                <string>cr3</string>
+                <string>nef</string>
+                <string>arw</string>
+                <string>dng</string>
+                <string>psb</string>
+                <string>xcf</string>
+                <string>cdr</string>
+                <string>tga</string>
+                <!-- Programming Languages -->
+                <string>scala</string>
+                <string>hs</string>
+                <string>ex</string>
+                <string>exs</string>
+                <string>erl</string>
+                <string>dart</string>
+                <string>lua</string>
+                <string>r</string>
+                <string>m</string>
+                <string>jl</string>
+                <string>cs</string>
+                <string>fs</string>
+                <string>pl</string>
+                <string>pm</string>
+                <string>clj</string>
+                <string>cljs</string>
+                <string>groovy</string>
+                <string>nim</string>
+                <string>zig</string>
+                <string>v</string>
+                <string>ml</string>
+                <string>elm</string>
+                <string>sol</string>
+                <string>svelte</string>
+                <string>astro</string>
+                <string>coffee</string>
+                <string>sass</string>
+                <string>scss</string>
+                <string>less</string>
+                <string>cc</string>
+                <string>cxx</string>
+                <string>hpp</string>
+                <string>hh</string>
+                <string>mm</string>
+                <string>wasm</string>
+                <string>wat</string>
+                <string>rkt</string>
+                <string>tf</string>
+                <!-- Programming Config/Data/Templates -->
+                <string>conf</string>
+                <string>cfg</string>
+                <string>properties</string>
+                <string>proto</string>
+                <string>graphql</string>
+                <string>gql</string>
+                <string>prisma</string>
+                <string>hbs</string>
+                <string>ejs</string>
+                <string>pug</string>
+                <string>njk</string>
+                <string>erb</string>
+                <string>twig</string>
+                <string>ipynb</string>
+                <string>rst</string>
+                <string>ps1</string>
+                <string>bat</string>
+                <string>fish</string>
             </array>
             <key>CFBundleTypeName</key>
             <string>All Supported Files</string>
